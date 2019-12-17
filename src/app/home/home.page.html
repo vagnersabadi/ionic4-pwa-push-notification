@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-button (click)="requestPermission()" expand="full">
+    Permission only
+  </ion-button>
+
+  <ion-button (click)="requestPermissionToken()" expand="full">
+    Permission get token
+  </ion-button>
+
+  <ion-button (click)="deleteToken()" expand="full">
+    DeleteToken
+  </ion-button>
+
+  <ion-button (click)="listen()" expand="full">
+    Foreground messages
+  </ion-button>
+
+</ion-content>
