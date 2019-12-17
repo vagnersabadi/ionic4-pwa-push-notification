@@ -73,7 +73,15 @@ messaging.setBackgroundMessageHandler(function(payload) {
   );
 });
  ```
- ### 6 - Tests
+ ### 6 - Add angular.json
+ ```
+"assets": [
+...
+"src/firebase-messaging-sw.js"
+],
+ ```
+ 
+ ### 7 - Tests
 ```html
 <ion-button (click)="requestPermission()">
      Permission get token
