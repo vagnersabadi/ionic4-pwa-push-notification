@@ -1,13 +1,13 @@
-# ionic4-pwa-push-notification
-Push notification using firebase for ionic 4
+## ionic4 pwa push notification
+> Push notification example for pwa using ionic 4 and Firebase Cloud Messaging
 
-1 - New project
+### 1 - New project
 
-2 - Install Lib
+### 2 - Install Libs
 ```sh
 npm install firebase @angular/fire --save
 ```
-3 - Import to app.module.ts
+### 3 - Import to app.module.ts
 ```ts
 import { AngularFireMessagingModule } from '@angular/fire/messaging';
 import { AngularFireModule } from '@angular/fire';
@@ -21,7 +21,7 @@ AngularFireMessagingModule,
 // ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
 ],
 ```  
- 4 - Add in enviroment firebaseConfig
+### 4 - Add in enviroment firebaseConfig
  ```ts
  export const environment = {
   production: true,
@@ -36,7 +36,7 @@ AngularFireMessagingModule,
   }
 };
  ```
- 5 - Create file firebase-messaging-sw.js intro SRC/
+ ### 5 - Create file firebase-messaging-sw.js intro SRC/
  ```js
  // Give the service worker access to Firebase Messaging.
 // Note that you can only use Firebase Messaging here, other Firebase libraries
@@ -73,7 +73,7 @@ messaging.setBackgroundMessageHandler(function(payload) {
   );
 });
  ```
- 6 - Tests
+ ### 6 - Tests
 ```html
 <ion-button (click)="requestPermission()">
      Permission get token
