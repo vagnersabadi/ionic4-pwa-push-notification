@@ -6,6 +6,7 @@ Push notification using firebase for ionic 4
 2 - Install Lib
 ```sh
 npm install firebase @angular/fire --save
+ng add @angular/pwa
 ```
 3 - Import to app.module.ts
 ```ts
@@ -17,7 +18,8 @@ import { environment } from './../environments/environment';
 imports:[
 ...
 AngularFireModule.initializeApp(environment.firebaseConfig),
-AngularFireMessagingModule
+AngularFireMessagingModule,
+// ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
 ],
 ```  
  4 - Add in enviroment firebaseConfig
