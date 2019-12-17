@@ -36,7 +36,7 @@ AngularFireMessagingModule,
   }
 };
  ```
- ### 5 - Create file firebase-messaging-sw.js intro SRC/
+ ### 5 - Create file firebase-messaging-sw.js in name-project/src
  ```js
  // Give the service worker access to Firebase Messaging.
 // Note that you can only use Firebase Messaging here, other Firebase libraries
